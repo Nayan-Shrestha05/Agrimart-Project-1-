@@ -1,0 +1,255 @@
+/* 01 navbar css */
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+    left: 0;
+    z-index: 2;
+}
+
+.header .navbar {
+    background: url('../img/header-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 2rem 5rem;
+}
+
+.navbar-brand {
+    width: 7.5rem;
+    margin-top: -0.1rem;
+}
+
+.header .navbar-nav .nav-link{
+    color: var(--text-white);
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    margin: 0 0.2rem;
+    font-family: var(--primary-font);
+}
+
+.header .navbar-nav .nav-link:hover,
+.header .navbar-nav  .nav-link.active {
+    color: var(--secondary-color);
+}
+
+.header .navbar-toggler {
+    color: var(--text-white);
+    font-size: 2rem;
+    height: 2.7rem;
+    padding: 0;
+}
+
+.header .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.header-scrolled {
+    position: fixed;
+    top: -0.4rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+    z-index: 999;
+    /* box-shadow: .5084rem 1.1419rem 2.5rem 0 rgb(0 0 0 / 8%); */
+    transition: 0.3s ease-in-out;
+}
+
+.form-control{
+    border-radius: 60px;
+    border-color: var(--secondary-color);
+    height: 3rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: var(--primary-font);
+    margin-right: -52px;
+    width: 25rem;
+    margin-top: 3px;
+}
+
+.btn{
+    border-radius: 60px;
+    color: var(--dark-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--primary-font);
+    border-color: var(--secondary-color);
+    height: 3rem;
+    border-bottom-width: 2px;
+    background-color: var(--secondary-color);
+    margin-top: 3px;
+}
+
+.icon-use{
+    display: flex;
+    gap: 3rem;
+}
+
+.cart{
+    width: 2.5rem;
+}
+
+.user{
+    width: 2.5rem;
+}
+/* 02 Banner Section */
+
+.banner_section {
+    background: url('../img/banner-slide/Banner-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+}
+
+.banner_section .carousel-item {
+    padding: 3rem 0;
+    height: 90vh;
+}
+
+.banner_section .carousel-caption {
+    top: 30%;
+    bottom: 0;
+    left: 3%;
+    right: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.banner_section .carousel-caption h3 {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--dark-color);
+    display: inline;
+}
+
+.banner_section .carousel-caption p {
+    max-width: 40rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+/*media query */
+@media(max-width:1170px){
+    .header .navbar{
+        background-size: cover;
+        padding: 2rem;
+    }
+    .header .navbar-nav{
+        margin-top: 2rem;
+    }
+    .header .navbar-nav .nav-link{
+        padding: 0.2rem 0.5rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .d-flex{
+        margin-top: -1.5rem;
+    }
+    .nav-item{
+        margin-top: -1rem;
+    }
+
+}
+
+@media(max-width:991px){
+    /* make icons and toggler sit on the same line, on the right */
+    .icon-use{
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        margin-left: auto;
+        flex: 0 0 auto;
+    }
+
+    /* ensure toggler stays inline with icons */
+    .header .navbar-toggler{
+        margin-left: 0.6rem;
+        display: inline-flex;
+        align-items: center;
+        flex: 0 0 auto;
+    }
+
+    /* collapse area (nav links / form) flows below the top row */
+    .header .navbar .navbar-collapse{
+        width: 100%;
+        order: 3;
+    }
+
+    /* stack nav links vertically and make links full width for touch */
+    .header .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .header .navbar-nav .nav-link{
+        padding: 0.6rem 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    /* make form and button adapt to small widths */
+    .form-control{
+        margin-left: 7rem;
+        margin-top: 0.6rem;
+    }
+
+    .btn{
+        margin-top: 0.6rem;
+        margin-right:3.5rem;
+    }
+
+    /* slightly smaller icon sizes to help fit */
+    .cart,
+    .user{
+        width: 2.5rem;
+        height: auto;
+    }
+
+    /* keep good spacing when collapse is shown */
+    .header .navbar .navbar-collapse.show{
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+    }
+
+    /* icon-use gap adjestment*/
+    .icon-use{
+        gap: 2.5rem;
+        margin-top: -2px;
+        margin-right: 10px;
+    }
+     .fas{
+        margin-top: 10px;
+     }
+}
+
+@media(max-width:767px){
+    
+      /* 02 Banner Section */
+    .banner_section {
+        min-height: 70vh;
+    }
+
+    .banner_section .carousel-item {
+        height: 70vh;
+    }
+}
+
+
+
