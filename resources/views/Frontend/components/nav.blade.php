@@ -1,9 +1,10 @@
 <!-- Navbar Section Start -->
+
 <header id="full_nav">
     <div class="header">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="/">
                     <img decoding="async" src="./img/logo.png" alt="">
                 </a>
 
@@ -16,22 +17,18 @@
                         </form>
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link active" href="/">Home</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">Features</a>
+                            <a class="nav-link" href="">Product</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="product.html">Product</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="gallery.html">About</a>
+                            <a class="nav-link" href="{{ route('about') }}">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="">Contact</a>
                         </li>
                     </ul>
                 </div>

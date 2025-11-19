@@ -186,13 +186,12 @@ section {
     margin: auto;
     margin-bottom: 1.5rem;
 }
-
-.about .banner_section,
-.product .banner_section,
-.gallery .banner_section,
-.contact .banner_section,
-.distributors .banner_section {
-    background: url('../images/banner-slide/top-banner.jpg');
+.about .bbanner_section,
+.product .bbanner_section,
+.gallery .bbanner_section,
+.contact .bbanner_section,
+.distributors .bbanner_section{
+    background: url('../img/banner-slide/top-banner.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -208,19 +207,19 @@ section {
     box-shadow: 0 0.2rem 1.5rem rgb(0 0 0 / 4%);
 }
 
-.contact .contact-form .form-control:focus,
-.distributors .contact-form .form-control:focus {
+.contact .contact-form .form-controler:focus,
+.distributors .contact-form .form-controler:focus {
     outline: none;
     box-shadow: none;
 }
 
-.contact .contact-form .form-control::placeholder,
-.distributors .contact-form .form-control::placeholder {
+.contact .contact-form .form-controler::placeholder,
+.distributors .contact-form .form-controler::placeholder {
     color: var(--primary-text);
 }
 
-.contact .contact-form .form-control,
-.distributors .contact-form .form-control {
+.contact .contact-form .form-controler,
+.distributors .contact-form .form-controler {
     padding: 1rem 1.5rem;
     border-radius: 0.rem;
     border: 0.1rem solid var(--secondary-color);
